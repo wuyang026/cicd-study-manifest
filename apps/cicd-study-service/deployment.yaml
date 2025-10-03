@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: app
-          image: image
+          image: 759348358497.dkr.ecr.ap-northeast-1.amazonaws.com/ghcr.io/wuyang026/cicd-study-service:xxx
           ports:
             - containerPort: 8080
