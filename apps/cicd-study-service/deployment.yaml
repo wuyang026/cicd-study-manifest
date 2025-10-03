@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: app
-          image: image
+          image: $(aws sts get-caller-identity --query Account --output text).dkr.ecr.ap-northeast-1.amazonaws.com/ghcr.io/wuyang026/cicd-study-service:a6f5b3ae9813621d004ee54f23faefd88d357f92
           ports:
             - containerPort: 8080
