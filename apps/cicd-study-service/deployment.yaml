@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cicd-study-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cicd-study-service
+  template:
+    metadata:
+      labels:
+        app: cicd-study-service
+    spec:
+      containers:
+        - name: app
+          image: ghcr.io/matcha2smiley/cicd-study-service:eaee2d4aba0f22c3ee657f21463be082a000d58f
+          ports:
+            - containerPort: 8080
