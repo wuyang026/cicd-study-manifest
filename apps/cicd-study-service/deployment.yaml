@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: app
-          image: ghcr.io/matcha2smiley/cicd-study-service:990e2389134383e4adfef6c49347256243f46f79
+          image: ghcr.io/wuyang026/cicd-study-service:990e2389134383e4adfef6c49347256243f46f79
           ports:
             - containerPort: 8080
