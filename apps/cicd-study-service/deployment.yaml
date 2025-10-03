@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: cicd-study-service
 spec:
-  replicas: 1
+  replicas: 5
   selector:
     matchLabels:
       app: cicd-study-service
