@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cicd-study-service
+  namespace: cicd
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: cicd-study-service
+  template:
+    metadata:
+      labels:
+        app: cicd-study-service
+    spec:
+      containers:
+        - name: app
+          image: 759348358497.dkr.ecr.ap-south-1.amazonaws.com/cicd-shared-repo:cicd-study-service-1.0.9
+          ports:
+            - containerPort: 8080
